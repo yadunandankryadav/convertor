@@ -1,0 +1,37 @@
+
+Number System Conversion Webpage convert a number in binary, octal, decimal, or hexadecimal to any other number system.
+
+
+
+HTML file:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Conversion</title>
+    <link rel="stylesheet" href="numSysConv.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Number System Conversion</h1>
+    <select class="iType" id="ipType">
+        <option value="ipbin">BIN</option>
+        <option value="ipoct">OCT</option>
+        <option value="ipdec">DEC</option>
+        <option value="iphex">HEX</option>
+    </select>
+    <input class="iNum" id="ipNum">
+    <button class="btn" onclick="convert()">CONVERT</button>
+    <select class="oType" id="opType">
+        <option value="opbin">BIN</option>
+        <option value="opoct">OCT</option>
+        <option value="opdec">DEC</option>
+        <option value="ophex">HEX</option>
+    </select>
+    <input class="oNum" id="opNum">
+</body>
+<script src="numSysConv.js"></script>
+</html>
